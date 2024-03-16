@@ -1,30 +1,75 @@
-# React + TypeScript + Vite
+# Template React com TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um template React com TypeScript projetado para facilitar o início de novos projetos. Ele inclui uma série de recursos e configurações comuns para ajudá-lo a começar rapidamente.
 
-Currently, two official plugins are available:
+## Recursos Incluídos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React com TypeScript:** Desenvolva aplicativos web robustos e escaláveis com a combinação poderosa do React e TypeScript.
+- **Biome como Linter:** Utilize o Biome como linter para garantir um código limpo e consistente em todo o projeto.
+- **React Context:** Gerencie o estado global da sua aplicação com o Context API do React, permitindo o compartilhamento de dados entre componentes de forma eficiente.
+- **Componentização:** Divida seu aplicativo em componentes reutilizáveis para facilitar a manutenção e a escalabilidade do código.
+- **Hook de Verificação de Eventos:** Use hooks personalizados para verificar eventos de clique e pressionamento de tecla de forma simples e eficaz.
+- **Tailwind CSS:** Estilize seu aplicativo de forma rápida e fácil com o Tailwind CSS, uma biblioteca de utilitários de estilização altamente personalizável.
+- **Paths Relativos:** Importe módulos usando paths relativos para simplificar a estrutura do projeto e evitar caminhos longos e confusos.
+- **React Helmet:** Manipule dinamicamente os meta tags e o título da página com o React Helmet para uma melhor otimização de SEO e experiência do usuário.
 
-## Expanding the ESLint configuration
+## Como Usar
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o Repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/template-react-typescript.git
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Instale as Dependências:
+   Navegue até o diretório do projeto e instale as dependências usando npm ou yarn:
+   ```bash
+   cd template-react-typescript
+   npm install
+   ```
+   ou
+   ```bash
+   cd template-react-typescript
+   yarn install
+   ```
+   ou
+   ```bash
+   cd template-react-typescript
+   pnpm install
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+3. Execute o Aplicativo:
+   Inicie o servidor de desenvolvimento e visualize o aplicativo no navegador:
+   ```bash
+   npm dev
+   ```
+   ou
+   ```bash
+   yarn dev
+   ```
+   ou
+   ```bash
+   cd template-react-typescript
+   pnpm dev
+   ```
+
+## Estrutura do Projeto
+
+A estrutura do projeto é organizada da seguinte forma:
+
+```
+template-react-typescript/
+├── public/                 # Arquivos públicos do aplicativo
+├── src/                    # Código-fonte do aplicativo
+│   ├── components/         # Componentes React
+│   ├── context/            # Contextos do React
+│   ├── hooks/              # Hooks personalizados
+│   ├── assets/             # Arquivos estáticos (imagens, ícones, etc.)
+│   ├── App.tsx             # Componente principal do aplicativo
+│   ├── index.tsx           # Ponto de entrada do aplicativo
+│   └── ...                 # Outros arquivos e diretórios do projeto
+├── .gitignore              # Arquivos a serem ignorados pelo Git
+├── package.json            # Dependências do projeto e scripts npm
+├── tsconfig.json           # Configurações do TypeScript
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Feel free to customize it further to suit your project needs!
