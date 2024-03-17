@@ -1,7 +1,7 @@
 {
-  "name": "react-template-ts",
+  "name": "jude",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",

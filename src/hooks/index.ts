@@ -1,3 +1,5 @@
-import useKeyPress from "./useKeyPress/useKeyPress";
+import useKeyPress from "hooks/useKeyPress/useKeyPress";
+import useBoolean from "hooks/useBoolean/useBoolean";
+import useTimeout from "hooks/useTimeout/useTimeout";
 
-export { useKeyPress };
+export { useBoolean, useKeyPress, useTimeout };
