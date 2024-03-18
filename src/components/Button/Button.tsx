@@ -4,7 +4,9 @@ import * as React from "react";
 const Button = (Args: IButtonProps) => {
 	const { action, value, className } = Args;
 
-	const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+	const handleClick = (
+		event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+	) => {
 		event.preventDefault();
 		action();
 	};
@@ -12,8 +14,7 @@ const Button = (Args: IButtonProps) => {
 	const handleKeyPress = (event: React.KeyboardEvent<HTMLButtonElement>) => {
 		event.preventDefault();
 		useKeyPress(event, action, ["Enter", ""]);
-	}
-
+	};
 
 	return (
 		<button

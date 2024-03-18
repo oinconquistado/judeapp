@@ -1,5 +1,5 @@
 const useTimeout = (callback: () => void, delay = 0) => {
-    setTimeout(() => callback(), delay);
+	setTimeout(() => callback(), delay);
 };
 
 export default useTimeout;

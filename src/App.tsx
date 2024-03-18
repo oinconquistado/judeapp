@@ -1,14 +1,8 @@
-import Login from "pages/Login/Login";
-import ForgotPassword from "pages/ForgotPassword/ForgotPassword";
+import { InputText } from "primereact/inputtext";
+import Login from "./pages/Login/Login.tsx";
 
 const App = () => {
-
-    return (
-        <>
-            <Login/>
-            <ForgotPassword/>
-        </>
-    );
+	return <Login />;
 };
 
 export default App;
