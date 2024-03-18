@@ -1,8 +1,8 @@
-import { InputText } from "primereact/inputtext";
-import Login from "./pages/Login/Login.tsx";
+import { RouterProvider } from "react-router-dom";
+import Router from "routes/Router";
 
 const App = () => {
-	return <Login />;
+	return <RouterProvider router={Router} />;
 };
 
 export default App;
